@@ -17,6 +17,11 @@
       <hardware-and-software />
     </div>
 
+    <div class="slanted">
+      <meet-the-team />
+    </div>
+
+
   </div>
 </template>
 
@@ -26,6 +31,7 @@ import SlantedDiv from "@/components/SlantedDiv.vue"
 import NonSlantedDiv from "@/components/NonSlantedDiv.vue"
 import HorizontalCard from "@/components/HorizontalCard.vue"
 import HardwareAndSoftware from "@/components/HardwareAndSoftware.vue"
+import MeetTheTeam from "@/components/MeetTheTeam.vue"
 
 export default {
   name: 'home',
@@ -34,6 +40,7 @@ export default {
     NonSlantedDiv,
     SlantedDiv,
     HardwareAndSoftware,
+    MeetTheTeam,
   }
 }
 </script>
