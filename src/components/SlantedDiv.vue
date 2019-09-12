@@ -1,11 +1,16 @@
 <template>
   <div class="slanted">
+    <horizontal-card />
   </div>
 </template>
 
 <script>
+  import HorizontalCard from './HorizontalCard.vue'
   export default {
-    name: 'slanted-div'
+    name: 'slanted-div',
+    components: {
+      HorizontalCard,
+    }
   }
 </script>
 
@@ -13,7 +18,6 @@
 <style>
 
 .slanted {
-  height: 120%;
   background: #e74c3c;
   overflow-x: hidden;
   width: 100%;

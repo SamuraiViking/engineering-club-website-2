@@ -12,7 +12,6 @@
   text-align: center;
   color: #2c3e50;
   height: 100%;
-  background: white;
 }
 
 html, body {
@@ -20,6 +19,10 @@ html, body {
   padding: 0px;
   margin: 0px;
   height: 100%;
+/*  background-image: url(https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
 }
 
 </style>
