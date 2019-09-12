@@ -1,6 +1,6 @@
 <template>
   <div class="slanted">
-    <horizontal-card />
+    <!-- <horizontal-card /> -->
   </div>
 </template>
 

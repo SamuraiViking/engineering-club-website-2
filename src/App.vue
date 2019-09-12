@@ -4,6 +4,7 @@
   </div>
 </template>
 
+
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -13,16 +14,13 @@
   color: #2c3e50;
   height: 100%;
 }
+.center {
+  margin: 0px auto;
+}
 
 html, body {
-  overflow-x: hidden;
   padding: 0px;
   margin: 0px;
-  height: 100%;
-/*  background-image: url(https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
 }
 
 </style>

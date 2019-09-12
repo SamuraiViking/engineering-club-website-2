@@ -1,6 +1,5 @@
 <template>
   <div class="non-slanted">
-    <horizontal-card />
   </div>
 </template>
 
