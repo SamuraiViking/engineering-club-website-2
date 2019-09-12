@@ -11,8 +11,8 @@ It is a long established fact that a reader will be distracted by the readable c
       </div>
     </div>
   </div> -->
-  <div>
-    <b-card no-body class="overflow-hidden" style="max-width: 540px;">
+  <div class="my-horizontal-card">
+    <b-card no-body class="overflow-hidden center" style="max-width: 800px;">
       <b-row no-gutters>
         <b-col md="6">
           <b-card-img src="https://picsum.photos/400/400/?image=20" class="rounded-0"></b-card-img>
@@ -38,43 +38,12 @@ It is a long established fact that a reader will be distracted by the readable c
 
 <style>
 
-.horizontal-card {
+.center {
+  margin: 0px auto;
+}
+
+.my-horizontal-card {
   padding: 200px 20px;
-}
-
-.horizontal-card .container {
-  background: blue;
-  display: flex;
-  max-width: 1000px;
-  margin: auto;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: white;
-  overflow: hidden;
-}
-
-.horizontal-card .container .img {
-  width: 60%;
-}
-
-.horizontal-card .container .img img {
-  width: 100%;
-  height: 100%;
-}
-
-.horizontal-card .container .text {
-  padding: 20px;
-  width: 50%;
-}
-
-@media only screen and (max-width: 800px) {
-  .horizontal-card .container {
-    display: block;
-  }
-
-  .horizontal-card .container .img {
-    width: 100%;
-  }
 }
 
 </style>
