@@ -1,37 +1,24 @@
 <template>
   <div class="home">
-    <div class="slant-top"></div>
     <slanted-div />
-    <div class="non-slanted"></div>
+    <non-slanted-div />
     <slanted-div />
-    <div class="non-slanted"></div>
+    <non-slanted-div />
     <slanted-div />
-    <div class="non-slanted"></div>
-    <slanted-div />
-    <div class="non-slanted"></div>
-    <slanted-div />
-    <div class="non-slanted"></div>
-    <slanted-div />
-    <div class="non-slanted"></div>
-    <slanted-div />
-    <div class="non-slanted"></div>
-    <slanted-div />
-    <div class="non-slanted"></div>
-    <slanted-div />
-    <div class="non-slanted"></div>
-    <slanted-div />
-
+    <non-slanted-div />
   </div>
 </template>
 
 <script>
 
 import SlantedDiv from "@/components/SlantedDiv.vue"
+import NonSlantedDiv from "@/components/NonSlantedDiv.vue"
 
 export default {
   name: 'home',
   components: {
-    SlantedDiv
+    NonSlantedDiv,
+    SlantedDiv,
   }
 }
 </script>
@@ -41,20 +28,6 @@ export default {
 
 .home {
   height: 100%;
-}
-
-.hero-image__figure img {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-}
-
-.non-slanted {
-  /*background: blue;*/
-  height: 700px;
-}
-
-.slant-top {
-
 }
 
 </style>
