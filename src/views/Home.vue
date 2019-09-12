@@ -1,18 +1,60 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="slant-top"></div>
+    <slanted-div />
+    <div class="non-slanted"></div>
+    <slanted-div />
+    <div class="non-slanted"></div>
+    <slanted-div />
+    <div class="non-slanted"></div>
+    <slanted-div />
+    <div class="non-slanted"></div>
+    <slanted-div />
+    <div class="non-slanted"></div>
+    <slanted-div />
+    <div class="non-slanted"></div>
+    <slanted-div />
+    <div class="non-slanted"></div>
+    <slanted-div />
+    <div class="non-slanted"></div>
+    <slanted-div />
+    <div class="non-slanted"></div>
+    <slanted-div />
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import SlantedDiv from "@/components/SlantedDiv.vue"
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    SlantedDiv
   }
 }
 </script>
+
+
+<style>
+
+.home {
+  height: 100%;
+}
+
+.hero-image__figure img {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.non-slanted {
+  /*background: blue;*/
+  height: 700px;
+}
+
+.slant-top {
+
+}
+
+</style>
