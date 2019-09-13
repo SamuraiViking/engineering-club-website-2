@@ -4,7 +4,10 @@
       <b-row>
         <b-col md="6">
           <div class="red-box">
-            <h1 class="label">Hardware</h1>
+            <h1 class="label">Hardware Team</h1>
+            <p class="red-box-description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+            </p>
             <div class="more-btn">
               <span class="more-btn-txt">Read More</span>
             </div>
@@ -12,7 +15,10 @@
         </b-col>
         <b-col md="6">
           <div class="red-box">
-            <h1 class="label">Software</h1>
+            <h1 class="label">Software Team</h1>
+            <p class="red-box-description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+            </p>
             <div class="more-btn">
               <span class="more-btn-txt">Read More</span>
             </div>
@@ -30,6 +36,17 @@
 </script>
 
 <style>
+
+.red-box-description {
+  color: white;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.red-box:hover .red-box-description {
+  height: 100px;
+}
 
 .image-container {
   width: 40%;
