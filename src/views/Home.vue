@@ -23,6 +23,9 @@
       <sponsers />
     </div>
 
+    <div class="slanted-top">
+      <contact />
+    </div>
 
   </div>
 </template>
@@ -35,10 +38,12 @@ import HorizontalCard from "@/components/HorizontalCard.vue"
 import HardwareAndSoftware from "@/components/HardwareAndSoftware.vue"
 import MeetTheTeam from "@/components/MeetTheTeam.vue"
 import Sponsers from "@/components/Sponsers.vue"
+import Contact from "@/components/Contact.vue"
 
 export default {
   name: 'home',
   components: {
+    Contact,
     Sponsers,
     HorizontalCard,
     NonSlantedDiv,
@@ -54,6 +59,12 @@ export default {
 
 .home {
   height: 100%;
+}
+
+.slanted-top {
+  background: #e74c3c;
+  height: 500px;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
 }
 
 .slanted {
