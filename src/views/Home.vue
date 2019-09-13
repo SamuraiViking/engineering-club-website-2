@@ -19,6 +19,10 @@
       <meet-the-team />
     </div>
 
+    <div>
+      <sponsers />
+    </div>
+
 
   </div>
 </template>
@@ -30,10 +34,12 @@ import NonSlantedDiv from "@/components/NonSlantedDiv.vue"
 import HorizontalCard from "@/components/HorizontalCard.vue"
 import HardwareAndSoftware from "@/components/HardwareAndSoftware.vue"
 import MeetTheTeam from "@/components/MeetTheTeam.vue"
+import Sponsers from "@/components/Sponsers.vue"
 
 export default {
   name: 'home',
   components: {
+    Sponsers,
     HorizontalCard,
     NonSlantedDiv,
     SlantedDiv,
