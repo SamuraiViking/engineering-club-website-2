@@ -11,13 +11,13 @@
     </div>
     <div>
       <horizontal-card v-bind:imgPosition="'right'"
-                       v-bind:imgSrc="'https://st3.depositphotos.com/1010683/15722/i/1600/depositphotos_157228044-stock-photo-asian-woman-controlling-drone.jpg'"
+                       v-bind:imgSrc="'droneWorking2.png'"
                        v-bind:title="'Racing'"/>
     </div>
 
     <div class="slanted">
       <horizontal-card v-bind:imgPosition="'left'"
-                       v-bind:imgSrc="'droneWorking.png'"
+                       v-bind:imgSrc="'droneWorking3.png'"
                        v-bind:title="'Camera'"/>
     </div>
 

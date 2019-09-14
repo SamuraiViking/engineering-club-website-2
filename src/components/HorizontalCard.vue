@@ -22,7 +22,7 @@ t is a long established fact that a reader will be distracted by the readable co
           </b-card-body>
         </b-col>
         <b-col md="6">
-          <b-card-img :src="imgSrc" class="rounded-0"></b-card-img>
+          <b-card-img :src="require(`@/assets/${imgSrc}`)" class="rounded-0"></b-card-img>
         </b-col>
       </b-row>
 

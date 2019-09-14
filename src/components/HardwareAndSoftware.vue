@@ -9,7 +9,9 @@
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
             </p>
             <div class="more-btn">
-              <span class="more-btn-txt">Read More</span>
+              <router-link to="/hardware">
+                <span class="more-btn-txt">Read More</span>
+              </router-link>
             </div>
           </div>
         </b-col>
@@ -20,7 +22,9 @@
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
             </p>
             <div class="more-btn">
-              <span class="more-btn-txt">Read More</span>
+              <router-link to="/software">
+                <span class="more-btn-txt">Read More</span>
+              </router-link>
             </div>
           </div>
         </b-col>
@@ -68,12 +72,19 @@
 }
 
 .more-btn-txt {
+  text-decoration: none;
+  color: #e74c3c;
   line-height: 45px;
   transition: ease 0.3s;
   font-weight: 400;
 }
 
+.more-btn-txt:hover {
+  text-decoration: none !important;
+}
+
 .red-box {
+  margin-bottom: 50px;
   width: 100%;
   height: 500px;
   border: 5px solid #e74c3c;
@@ -86,7 +97,6 @@
 }
 
 .red-box:hover .more-btn {
-  color: white;
   border: 2px solid white;
   margin: 25px auto 0px auto;
   width: 100px;
@@ -95,13 +105,18 @@
 }
 
 .red-box:hover .more-btn-txt {
+  color: white;
   line-height: 95px;
   font-weight: 900;
 }
 
 .more-btn:hover {
   background: white;
-  color: red !important;
+}
+
+.more-btn:hover .more-btn-txt {
+  color: red;
+  text-decoration: none !important;
 }
 
 .more-btn:hover .more-btn-txt {
