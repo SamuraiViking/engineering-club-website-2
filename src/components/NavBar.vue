@@ -7,9 +7,15 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Home</b-nav-item>
-          <b-nav-item href="#">Teams</b-nav-item>
-          <b-nav-item href="#">Contact</b-nav-item>
+          <b-nav-item>
+            <a class="nav-link" href="#about" v-smooth-scroll>About</a>
+          </b-nav-item>
+          <b-nav-item>
+            <a class="nav-link" href="#meet-the-team" v-smooth-scroll>The Team</a>
+          </b-nav-item>
+          <b-nav-item>
+            <a class="nav-link" href="#contact" v-smooth-scroll>Contact</a>
+          </b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -35,4 +41,11 @@
     name: "nav-bar"
   }
 </script>
+
+<style>
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+</style>
 

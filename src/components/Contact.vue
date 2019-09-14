@@ -2,6 +2,7 @@
   <div id="contact">
     <div id="contact-container">
       <h1 id="contact-header">Contact</h1>
+      <h1>david54@stolaf.edu</h1>
       <div id="contact-icons">
         <font-awesome-icon :icon="['fab', 'facebook-square']" size="3x" />
         <font-awesome-icon :icon="['fab', 'github']" size="3x" />
@@ -39,6 +40,7 @@ font-awesome-icon:hover {
 #contact-icons {
   width: 200px;
   margin: 0px auto;
+  margin-top: 20px;
   justify-content: space-between;
   display: flex;
 }

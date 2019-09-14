@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div id="about">
     <h1>International Aerial Robotics Competition</h1>
     <img src="https://i.ytimg.com/vi/2w08D9MoOMk/maxresdefault.jpg">
     <p>
@@ -28,17 +28,17 @@ export default {
   font-size: 35px;
 }
 
-.about {
+#about {
   max-width: 800px;
   margin: 0px auto;
   padding: 100px 20px;
 }
 
-.about h1 {
+#about h1 {
   margin-bottom: 30px;
 }
 
-.about img {
+#about img {
   width: 100%;
   height: auto;
   margin-bottom: 30px;

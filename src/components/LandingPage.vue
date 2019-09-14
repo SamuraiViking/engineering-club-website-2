@@ -4,8 +4,12 @@
       <div class="content">
         <h1>Stolaf and Carlton Engineers</h1>
         <div id="action-btns">
-          <b-button id="join" variant="light" size="lg">Join Now</b-button>
-          <b-button id="more" variant="outline-light" size="lg">See More</b-button>
+          <b-button id="join" variant="light" size="lg">
+            <a href="#contact" v-smooth-scroll>Join Now</a>
+          </b-button>
+          <b-button id="more" variant="outline-light" size="lg">
+            <a href="#about" v-smooth-scroll>See More</a>
+          </b-button>
         </div>
       </div>
       <div id="image-container">
@@ -53,8 +57,21 @@
   height: auto;
 }
 
-#image-container {
-  /* background: blue; */
+#more a {
+  color: white;
+}
+
+#join a {
+  color: black;
+}
+
+#join:hover a {
+  text-decoration: none;
+}
+
+#more:hover a {
+  color: black;
+  text-decoration: none;
 }
 
 
