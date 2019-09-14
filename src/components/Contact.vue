@@ -1,11 +1,13 @@
 <template>
   <div id="contact">
-    <h1 id="contact-header">Contact</h1>
-    <div>
-      <font-awesome-icon :icon="['fab', 'facebook-square']" size="3x" />
-      <font-awesome-icon :icon="['fab', 'youtube']" size="3x" />
-      <font-awesome-icon :icon="['fab', 'github']" size="3x" />
-    </div>
+    <div id="contact-container">
+      <h1 id="contact-header">Contact</h1>
+      <div id="contact-icons">
+        <font-awesome-icon :icon="['fab', 'facebook-square']" size="3x" />
+        <font-awesome-icon :icon="['fab', 'youtube']" size="3x" />
+        <font-awesome-icon :icon="['fab', 'github']" size="3x" />
+      </div>
+    </div id="contact-container">
   </div>
 </template>
 
@@ -20,7 +22,25 @@
 
 #contact {
   color: white;
-  padding: 100px 0 200px 0;
+}
+
+#contact-header {
+  margin-bottom: 20px;
+}
+
+#contact-container {
+  padding: 200px 0 200px 0;
+}
+
+font-awesome-icon:hover {
+  color: blue !important;
+}
+
+#contact-icons {
+  width: 200px;
+  margin: 0px auto;
+  justify-content: space-between;
+  display: flex;
 }
 
 </style>

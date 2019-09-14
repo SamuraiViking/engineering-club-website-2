@@ -4,6 +4,14 @@
   </div>
 </template>
 
+<script>
+
+export default {
+  created() {
+    document.title = "Engineering Club"  
+  }
+}
+</script>
 
 <style>
 #app {

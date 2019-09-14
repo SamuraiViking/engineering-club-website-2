@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <landing-page />
     <div class="slanted">
       <horizontal-card v-bind:imgPosition="'left'"/>
     </div>
@@ -39,10 +40,12 @@ import HardwareAndSoftware from "@/components/HardwareAndSoftware.vue"
 import MeetTheTeam from "@/components/MeetTheTeam.vue"
 import Sponsers from "@/components/Sponsers.vue"
 import Contact from "@/components/Contact.vue"
+import LandingPage from "@/components/LandingPage.vue"
 
 export default {
   name: 'home',
   components: {
+    LandingPage,
     Contact,
     Sponsers,
     HorizontalCard,
@@ -63,7 +66,6 @@ export default {
 
 .slanted-top {
   background: #e74c3c;
-  height: 500px;
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
 }
 
