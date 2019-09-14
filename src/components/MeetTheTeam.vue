@@ -1,6 +1,6 @@
 <template>
   <div id="meet-the-team">
-    <h1 id="header">The Engineers</h1>
+    <h1 class="header">The Engineers</h1>
     <div id="team-container">
       <div v-for="person in people">
         <b-card
@@ -24,6 +24,11 @@
           </b-card-text>
         </b-card>
       </div>
+    </div>
+    <div id="scroll">
+      <font-awesome-icon :icon="['fa', 'arrow-left']" size="3x"/>
+      <h1 id="scroll-header" class="header">Scroll</h1>
+      <font-awesome-icon :icon="['fa', 'arrow-right']" size="3x"/>
     </div>
   </div>
 </template>
@@ -114,12 +119,24 @@
 
 <style>
 
+#scroll {
+  display: flex;
+  width: 240px;
+  margin: 0px auto;
+  color: white;
+  margin-top: 30px;
+}
+
+#scroll-header {
+  margin: 0 20px;
+}
+
 .myText {
   text-align: left;
   line-height: 10px;
 }
 
-#header {
+.header {
   color: white;
   margin-bottom: 50px;
 }

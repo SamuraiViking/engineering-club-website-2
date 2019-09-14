@@ -5,6 +5,8 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
@@ -14,7 +16,9 @@ Vue.use(vueSmoothScroll)
 
 library.add(faFacebookSquare,
             faGithub,
-            faYoutube)
+            faYoutube,
+            faArrowRight,
+            faArrowLeft)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
