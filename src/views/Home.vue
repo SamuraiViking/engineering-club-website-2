@@ -1,6 +1,9 @@
 <template>
   <div class="home">
     <landing-page />
+    <div>
+      <horizontal-card v-bind:imgPosition="'right'"/>
+    </div>
     <div class="slanted">
       <horizontal-card v-bind:imgPosition="'left'"/>
     </div>

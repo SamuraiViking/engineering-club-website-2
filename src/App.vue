@@ -1,12 +1,17 @@
 <template>
   <div id="app">
+    <nav-bar />
     <router-view/>
   </div>
 </template>
 
 <script>
+import NavBar from "./components/NavBar.vue"
 
 export default {
+  components: {
+    NavBar
+  },
   created() {
     document.title = "Engineering Club"  
   }
@@ -27,6 +32,7 @@ export default {
 }
 
 html, body {
+  height: 100%;
   padding: 0px;
   margin: 0px;
 }
