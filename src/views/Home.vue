@@ -2,7 +2,8 @@
   <div class="home">
     <landing-page />
     <div>
-      <horizontal-card v-bind:imgPosition="'right'"/>
+      <horizontal-card v-bind:imgPosition="'right'"
+                       v-bind:title="''"/>
     </div>
     <div class="slanted">
       <horizontal-card v-bind:imgPosition="'left'"/>

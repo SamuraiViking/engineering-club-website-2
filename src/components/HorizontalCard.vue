@@ -28,7 +28,7 @@ t is a long established fact that a reader will be distracted by the readable co
           </b-card-body>
         </b-col>
         <b-col md="6">
-          <b-card-img src="https://picsum.photos/400/400/?image=20" class="rounded-0"></b-card-img>
+          <b-card-img src="https://i.cbc.ca/1.3364390.1450116929!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/elikos-drone.jpg" class="rounded-0"></b-card-img>
         </b-col>
       </b-row>
 
