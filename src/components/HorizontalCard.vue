@@ -3,7 +3,7 @@
     <b-card no-body class="overflow-hidden center shadow" style="max-width: 800px;">
       <b-row v-if="imgPosition==='left'"no-gutters>
         <b-col md="6">
-          <b-card-img :src="imgSrc" class="rounded-0"></b-card-img>
+          <b-card-img :src="require(`@/assets/${imgSrc}`)" class="rounded-0"></b-card-img>
         </b-col>
         <b-col md="6">
           <b-card-body :title="title">

@@ -6,7 +6,7 @@
     </div>
     <div class="slanted">
       <horizontal-card v-bind:imgPosition="'left'"
-                       v-bind:imgSrc="'http://localhost:8080/img/droneWorking.d568522e.png'"
+                       v-bind:imgSrc="'droneWorking.png'"
                        v-bind:title="'Laser Tag'"/>
     </div>
     <div>
@@ -17,7 +17,7 @@
 
     <div class="slanted">
       <horizontal-card v-bind:imgPosition="'left'"
-                       v-bind:imgSrc="'https://ak8.picdn.net/shutterstock/videos/15426628/thumb/1.jpg'"
+                       v-bind:imgSrc="'droneWorking.png'"
                        v-bind:title="'Camera'"/>
     </div>
 
