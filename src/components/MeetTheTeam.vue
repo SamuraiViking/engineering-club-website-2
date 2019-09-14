@@ -1,6 +1,6 @@
 <template>
   <div id="meet-the-team">
-    <h1 id="header">Meet the Team</h1>
+    <h1 id="header">The Engineers</h1>
     <div id="team-container">
       <div v-for="person in people">
         <b-card

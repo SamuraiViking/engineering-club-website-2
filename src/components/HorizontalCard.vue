@@ -3,32 +3,26 @@
     <b-card no-body class="overflow-hidden center shadow" style="max-width: 800px;">
       <b-row v-if="imgPosition==='left'"no-gutters>
         <b-col md="6">
-          <b-card-img src="https://picsum.photos/400/400/?image=20" class="rounded-0"></b-card-img>
+          <b-card-img :src="imgSrc" class="rounded-0"></b-card-img>
         </b-col>
         <b-col md="6">
-          <b-card-body title="Spacial Awarness">
+          <b-card-body :title="title">
             <b-card-text class="my-card-text">
 t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
             </b-card-text>
-            <div class="rank">
-              <span class="rank-text">4th place</span>
-            </div>
           </b-card-body>
         </b-col>
       </b-row>
       <b-row v-if="imgPosition==='right'"no-gutters>
         <b-col md="6">
-          <b-card-body title="Spacial Awarness">
+          <b-card-body :title="title">
             <b-card-text class="my-card-text">
 t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
             </b-card-text>
-            <div class="rank">
-              <span class="rank-text">4th place</span>
-            </div>
           </b-card-body>
         </b-col>
         <b-col md="6">
-          <b-card-img src="https://i.cbc.ca/1.3364390.1450116929!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/elikos-drone.jpg" class="rounded-0"></b-card-img>
+          <b-card-img :src="imgSrc" class="rounded-0"></b-card-img>
         </b-col>
       </b-row>
 
@@ -38,7 +32,7 @@ t is a long established fact that a reader will be distracted by the readable co
 
 <script>
   export default {
-    props: ['imgPosition'],
+    props: ['imgPosition', 'imgSrc', 'title'],
     name: 'horizontal-card'
   }
 </script>

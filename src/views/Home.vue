@@ -2,18 +2,23 @@
   <div class="home">
     <landing-page />
     <div>
-      <horizontal-card v-bind:imgPosition="'right'"
-                       v-bind:title="''"/>
+      <about />
     </div>
     <div class="slanted">
-      <horizontal-card v-bind:imgPosition="'left'"/>
+      <horizontal-card v-bind:imgPosition="'left'"
+                       v-bind:imgSrc="'http://localhost:8080/img/droneWorking.d568522e.png'"
+                       v-bind:title="'Laser Tag'"/>
     </div>
     <div>
-      <horizontal-card v-bind:imgPosition="'right'"/>
+      <horizontal-card v-bind:imgPosition="'right'"
+                       v-bind:imgSrc="'https://st3.depositphotos.com/1010683/15722/i/1600/depositphotos_157228044-stock-photo-asian-woman-controlling-drone.jpg'"
+                       v-bind:title="'Racing'"/>
     </div>
 
     <div class="slanted">
-      <horizontal-card v-bind:imgPosition="'left'"/>
+      <horizontal-card v-bind:imgPosition="'left'"
+                       v-bind:imgSrc="'https://ak8.picdn.net/shutterstock/videos/15426628/thumb/1.jpg'"
+                       v-bind:title="'Camera'"/>
     </div>
 
     <div>
@@ -37,6 +42,7 @@
 
 <script>
 
+import About from "@/components/About.vue"
 import SlantedDiv from "@/components/SlantedDiv.vue"
 import NonSlantedDiv from "@/components/NonSlantedDiv.vue"
 import HorizontalCard from "@/components/HorizontalCard.vue"
@@ -49,6 +55,7 @@ import LandingPage from "@/components/LandingPage.vue"
 export default {
   name: 'home',
   components: {
+    About,
     LandingPage,
     Contact,
     Sponsers,

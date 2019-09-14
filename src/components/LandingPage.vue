@@ -1,11 +1,11 @@
 <template>
   <div id="landing-page">
     <div class="container">
-      <div>
+      <div class="content">
         <h1>Stolaf and Carlton Engineers</h1>
         <div id="action-btns">
-          <b-button variant="light" size="lg">Join Now</b-button>
-          <b-button variant="light" size="lg">See More</b-button>
+          <b-button id="join" variant="light" size="lg">Join Now</b-button>
+          <b-button id="more" variant="outline-light" size="lg">See More</b-button>
         </div>
       </div>
       <div id="image-container">
@@ -26,23 +26,38 @@
 #landing-page .container {
   width: 100%;
   display: flex;
+  text-align: left;
 }
 
 #landing-page h1 {
   margin-bottom: 50px;
 }
 
+#action-btns {
+  display: flex;
+}
+
+#action-btns #join {
+  width: 200px;
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  #landing-page .container {
+    display: block;
+  }
+}
+
+#image-container img {
+  width: 100%;
+  height: auto;
+}
+
 #image-container {
   /* background: blue; */
 }
 
-#action-btns {
-  display: flex;
-  max-width: 300px;
-  margin: 0px auto;
-  /* background: blue; */
-  justify-content: space-between;
-}
+
 
 
 
