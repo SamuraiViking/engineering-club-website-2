@@ -4,11 +4,11 @@
       <div class="content">
         <h1>Stolaf and Carlton Engineers</h1>
         <div id="action-btns">
-          <b-button id="join" variant="light" size="lg">
-            <a href="#contact" v-smooth-scroll>Join Now</a>
+          <b-button id="join" variant="light" size="lg" href="#contact" @click.prevent="scrollTo('#contact')">
+            <a class="action-link">Join Now</a>
           </b-button>
-          <b-button id="more" variant="outline-light" size="lg">
-            <a href="#about" v-smooth-scroll>See More</a>
+          <b-button id="more" variant="outline-light" size="lg" href="#about" @click.prevent="scrollTo('#about')">
+            <a class="action-link">See More</a>
           </b-button>
         </div>
       </div>
@@ -21,11 +21,22 @@
 
 <script>
   export default {
-    name: 'landing-page'
+    name: 'landing-page',
+    methods: {
+      scrollTo(selector) {
+        document.querySelector(selector).scrollIntoView({behavior: 'smooth'})
+        console.log(selector);
+      }
+    }
   }
 </script>
 
 <style>
+
+.myBtn {
+
+}
+
 
 #landing-page .container {
   width: 100%;
