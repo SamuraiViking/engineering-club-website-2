@@ -6,7 +6,7 @@
           <div class="red-box">
             <h1 class="label">Hardware Team</h1>
             <p class="red-box-description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+              Computer engineering is a branch of engineering that integrates several fields of computer science and electronic engineering required to develop computer hardware and software. Computer engineers usually have training in electronic engineering (or electrical engineering), software design, and hardware-software integration instead of only software engineering or electronic engineering.
             </p>
             <div class="more-btn">
               <router-link to="/hardware">
@@ -19,7 +19,7 @@
           <div class="red-box">
             <h1 class="label">Software Team</h1>
             <p class="red-box-description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+              Computer software, or simply software, is a collection of data or computer instructions that tell the computer how to work. This is in contrast to physical hardware, from which the system is built and actually performs the work. In computer science and software engineering, computer software is all information processed by computer systems, programs and data.
             </p>
             <div class="more-btn">
               <router-link to="/software">

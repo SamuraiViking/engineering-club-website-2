@@ -8,7 +8,7 @@
         <b-col md="6">
           <b-card-body :title="title">
             <b-card-text class="my-card-text">
-t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+              {{ text }}
             </b-card-text>
           </b-card-body>
         </b-col>
@@ -17,7 +17,7 @@ t is a long established fact that a reader will be distracted by the readable co
         <b-col md="6">
           <b-card-body :title="title">
             <b-card-text class="my-card-text">
-t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+              {{ text }}
             </b-card-text>
           </b-card-body>
         </b-col>
@@ -32,7 +32,7 @@ t is a long established fact that a reader will be distracted by the readable co
 
 <script>
   export default {
-    props: ['imgPosition', 'imgSrc', 'title'],
+    props: ['imgPosition', 'imgSrc', 'title', 'text'],
     name: 'horizontal-card'
   }
 </script>

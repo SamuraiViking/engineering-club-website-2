@@ -7,18 +7,23 @@
     <div class="slanted">
       <horizontal-card v-bind:imgPosition="'left'"
                        v-bind:imgSrc="'droneWorking.png'"
-                       v-bind:title="'Laser Tag'"/>
+                       v-bind:title="'Laser Tag'"
+                       v-bind:text="`${text1}`"/>
+                       />
     </div>
     <div>
       <horizontal-card v-bind:imgPosition="'right'"
                        v-bind:imgSrc="'droneWorking2.png'"
-                       v-bind:title="'Racing'"/>
+                       v-bind:title="'Racing'"
+                       v-bind:text="`${text2}`"/>
     </div>
 
     <div class="slanted">
       <horizontal-card v-bind:imgPosition="'left'"
                        v-bind:imgSrc="'droneWorking3.png'"
-                       v-bind:title="'Camera'"/>
+                       v-bind:title="'Photography'"
+                       v-bind:text="`${text3}`"/>
+                       />
     </div>
 
     <div>
@@ -64,6 +69,14 @@ export default {
     SlantedDiv,
     HardwareAndSoftware,
     MeetTheTeam,
+  },
+
+  data() {
+      return {
+        text1: "Create drones that shoot other drones with laser beams! You get points for shooting down other drones and staying alive in the arena.",
+        text2: "FPV drone racing (where FPV stands for first-person view or first person video) is a sport type where participants control \"drones\", equipped with cameras while wearing head-mounted displays showing the live stream camera feed from the drones.",
+        text3: "Aerial photography (or airborne imagery) is the taking of photographs from an aircraft or other flying object. Platforms for aerial photography include fixed-wing aircraft, helicopters, unmanned aerial vehicles (UAVs or \"drones\"), balloons, blimps and dirigibles, rockets, pigeons, kites, parachutes, stand-alone telescoping and vehicle-mounted poles"
+    }
   }
 }
 </script>
